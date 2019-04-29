@@ -1,0 +1,7 @@
+
+Medlemmer af denne gruppe er Simon Grøn, Simon Koefoed og Thomas Møller
+
+
+fejl og mangler: Vi er ikke helt sikre på det med globale og lokale objekter, men vi tror vi har gjordt det korrekt.
+Vi ville have gjordt gui separat fra logikken, men vi måden vi opdaterer scoren i spillet ville ændre slutsummen hvis vi hentede
+værdierne i gemt bag gui'en, derfor henter vi værdierne fra gui'en da de bliver låst fast.

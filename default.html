@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="Yatzeeeeeee.js"></script>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item">Terninger
+            <table class="diceTable">
+                <tr id="dices">
+                    <td id="dice1"><img src="Alea_1.png"> <br> <input id="check1" type="checkbox"/></td>
+                    <td id="dice2"><img src="Alea_2.png"> <br> <input id="check2" type="checkbox"/></td>
+                    <td id="dice3"><img src="Alea_3.png"> <br> <input id="check3" type="checkbox"/></td>
+                    <td id="dice4"><img src="Alea_4.png"> <br> <input id="check4" type="checkbox"/></td>
+                    <td id="dice5"><img src="Alea_5.png"> <br> <input id="check5" type="checkbox"/></td>
+                </tr>
+            </table>
+        <div class="button">
+            <label id="turn">Turn 1</label>
+                <button>Roll</button>
+
+        </div>
+    </div>
+    <div class="grid-item">ScoreBoard
+       <div class="grid-item-row">
+           <div class="grid-item-column">1-s</div>
+           <div class="grid-item-column"><input id="1-s" readonly/></div>
+           <div class="grid-item-column"></div>
+           <div class="grid-item-column"></div>
+           <!--<div class="grid-item-column"></div>-->
+           <!--<div class="grid-item-column"></div>-->
+       </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">2-s</div>
+            <div class="grid-item-column"><input id="2-s" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">3-s</div>
+            <div class="grid-item-column"><input id="3-s" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">4-s</div>
+            <div class="grid-item-column"><input id="4-s" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">5-s</div>
+            <div class="grid-item-column"><input id="5-s" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">6-s</div>
+            <div class="grid-item-column"><input id="6-s" readonly/></div>
+            <div class="grid-item-column">Sum <input id="sum" readonly/></div>
+            <!--<div class="grid-item-column"><input readonly/></div>-->
+            <div class="grid-item-column">Bonus <input id="bonus" readonly/></div>
+            <!--<div class="grid-item-column"><input readonly/></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">One Pair</div>
+            <div class="grid-item-column"><input id="one_pair" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Two Pairs</div>
+            <div class="grid-item-column"><input id="two_pairs" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Three same</div>
+            <div class="grid-item-column"><input id="three_same" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Four same</div>
+            <div class="grid-item-column"><input id="four_same" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Full House</div>
+            <div class="grid-item-column"><input id="full_house" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Small Straight</div>
+            <div class="grid-item-column"><input id="small_straight" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Large Straight</div>
+            <div class="grid-item-column"><input id="large_straight" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Chance</div>
+            <div class="grid-item-column"><input id="chance" readonly/></div>
+            <div class="grid-item-column"></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <!--<div class="grid-item-column"></div>-->
+        </div>
+        <div class="grid-item-row">
+            <div class="grid-item-column">Yatzy</div>
+            <div class="grid-item-column"><input id="yatzy" readonly/></div>
+            <div class="grid-item-column"></div>
+            <!--<div class="grid-item-column"></div>-->
+            <div class="grid-item-column">Total <input id="total" readonly/></div>
+            <!--<div class="grid-item-column"><input readonly/></div>-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

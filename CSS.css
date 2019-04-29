@@ -1,0 +1,63 @@
+
+
+img {
+    height: 50px;
+    width: 50px;
+}
+button{
+    width: 100px;
+    height: inherit;
+    float: right;
+}
+
+div.button{
+    height: 50px;
+}
+
+div.grid-container{
+    background-image: url("ozonepark_2464_447168417__26512.1490639053.jpg");
+    /*background-image: url("wood.jpg");*/
+    width: 450px;
+}
+
+table.diceTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.grid-item{
+    border: 1px solid black;
+    border-collapse: separate;
+    padding: 10px;
+    margin: 10px;
+}
+td{
+    padding: 2px;
+    min-width: 50px;
+}
+input{
+    width: 75%;
+}
+
+div{
+    font-family: "Bookman Old Style", sans-serif;
+    color: white;
+    /*-----------------------------------------*/
+    /*Bruges til debugging af grid*/
+    /*
+    border: 1px dashed deeppink;
+    */
+}
+
+
+.grid-item-row{
+    display: flex;
+    padding: 2px;
+}
+
+.grid-item-column{
+    flex: 50%;
+    font-size: 75%;
+    /*border: 1px dotted deeppink;*/
+}
+
